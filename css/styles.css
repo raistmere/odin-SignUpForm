@@ -6,7 +6,7 @@
 *
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 16px;
     padding: 0;
     margin: 0;
 }
@@ -94,7 +94,14 @@ a
     background-color:whitesmoke
 }
 
-.rightTitle
+.formContainer
+{
+    /* Flex properties */
+    display: flex;
+    flex-direction: column;
+}
+
+.topContainer
 {
     /* General Properties */
     max-width: 700px;
@@ -109,20 +116,20 @@ a
     background-color:whitesmoke;
 }
 
-.rightTitle > p
+.topContainer > p
 {
     /* Text properties */
     font-size: 24px;
     margin-left: 25px;
 }
 
-.text2
+.topContainer .text2
 {
     margin-top: 25px;
     margin-bottom: 75px;
 }
 
-.signUpForm
+.middleContainer
 {
     /* General Properties */
     width: 100%;
@@ -137,7 +144,30 @@ a
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.createAccount
+.formTitle
+{
+    color: black;
+}
+
+.signUpContainer
+{
+    /* Flex properties */
+    display: flex;
+}
+
+.leftSideForm
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.rightSideForm
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomContainer
 {
     flex: 1;
     background-color: whitesmoke;
