@@ -1,12 +1,19 @@
-@font-face {
+@font-face 
+{
     font-family: NorseBold;
     src: url(Norse-Bold.otf);
+}
+
+:root
+{
+    --customColor1: rgb(59, 158, 142);
 }
 
 *
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-weight: bold;
+    font-size: 10px;
     padding: 0;
     margin: 0;
 }
@@ -16,18 +23,27 @@ a
     color: white;
 }
 
-.container
+body
 {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
+    background-color: #0e1113;
 }
 
+.container
+{
+    /* General properties */
+    justify-content: center;
+    height: 100vh;
+
+    /* Flex properties */
+    display: flex;
+}
+
+/* START OF LEFT SIDE OF THE PAGE CSS */
 .leftContainer
 {
     /* General properties */
-    max-width: 500px;
-    min-width: 500px;
+    max-width: 450px;
+    min-width: 450px;
 
     /* Flex properties */
     display: flex;
@@ -35,7 +51,6 @@ a
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    flex: 1;
 
     /* Image properties */
     background-image: url(redd-f-vz2zGzFktBo-unsplash.jpg);
@@ -81,64 +96,55 @@ a
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* START OF RIGHT SIDE OF THE PAGE CSS */
 .rightContainer
 {
-    /* General Properties */
-    width: 100%;
+    /* General properties */
+    width: 800px;
+    min-width: 650px;
 
-    /* Flex Properties */
     display: flex;
     flex-direction: column;
-    flex: 2;
-
-    background-color:whitesmoke
-}
-
-.formContainer
-{
-    /* Flex properties */
-    display: flex;
-    flex-direction: column;
+    background-color: aqua;
 }
 
 .topContainer
 {
-    /* General Properties */
-    max-width: 700px;
+    /* General properties */
+    width: 100%;
+    height: 500px;
 
     /* flex Properties */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    flex: 1;
-
-
+    
     background-color:whitesmoke;
 }
 
 .topContainer > p
 {
+    /* General Properties */
+    max-width: 600px;
+    margin-bottom: 50px;
+
     /* Text properties */
-    font-size: 24px;
-    margin-left: 25px;
+    font-size: 20px;
 }
 
-.topContainer .text2
+em
 {
-    margin-top: 25px;
-    margin-bottom: 75px;
+    /* Text properties */
+    font-size: 20px;
 }
 
 .middleContainer
 {
     /* General Properties */
-    width: 100%;
-    height: 250px;
     position: relative;
+    width: 100%;
+    height: 450px;
     
-    /* flex Properties */
-
-
     /* Styling */
     background-color: white;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
@@ -146,29 +152,123 @@ a
 
 .formTitle
 {
+    /* General properties */
+    margin-top: 10px;
+
+    /* Text properties */
+    font-size: 18px;
     color: black;
 }
 
 .signUpContainer
 {
+    /* General properties */
+    width: 75%;
+    height: 70%;
+    margin-top: 20px;
+
+    
     /* Flex properties */
     display: flex;
 }
 
-.leftSideForm
+.leftSideForm, .rightSideForm
 {
+    /* General properties */
+    margin-right: 50px;
+
+    /* Flex properties */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputBox
+{
+    /* Flex properties */
     display: flex;
     flex-direction: column;
 }
 
-.rightSideForm
+label
 {
-    display: flex;
-    flex-direction: column;
+    /* Text properties */
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+input
+{
+    /* General properties */
+    width: 200px;
+    padding: 5px;
+
+    /* Border properties */
+    border-color: whitesmoke;
+    border-radius: 5px;
+    border-style: solid;
+
+    /* Text properties */
+    font-weight: normal;
+    font-size: 16px;
+}
+
+input:focus
+{
+    outline: none;
+    border-color: var(--customColor1);
 }
 
 .bottomContainer
 {
-    flex: 1;
+    /* General properties */
+    width: 100%;
+    height: 500px;
+    padding-top: 30px;
+
     background-color: whitesmoke;
+}
+
+.creatAccountContainer button
+{
+    /* General properties */
+    position: relative;
+    width: 200px;
+    height: 40px;
+
+    /* Text properties */
+    font-size: 14px;
+    color: white;
+
+    /* Border properties */
+    border-radius: 6px;
+    border-style: solid;
+    border-color: var(--customColor1);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+
+    background-color: var(--customColor1);
+}
+
+.logInContainer
+{
+    /* General properties */
+    margin-top: 25px;
+
+    /* Text properties */
+    font-size: 14px;
+}
+
+.logInContainer a
+{
+    font-size: 14px;
+    color: var(--customColor1);
+    text-decoration: none;
+}
+
+
+/* This shifts all content inside the 3 containers to the left with margin of 50px */
+p, .formTitle, .signUpContainer, .creatAccountContainer, .logInContainer
+{
+    /* General properties */
+    margin-left: 40px;
 }

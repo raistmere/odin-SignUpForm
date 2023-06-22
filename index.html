@@ -10,89 +10,120 @@
     </head>
 
     <body>
-        <div class="container">
-            <!-- Contains the left side of the page: Image and logo -->
-            <div class="leftContainer"> <!-- This holds the background image-->
-                <div class="leftLogoBar">
-                    <img class="logoImg" src="css/odin-lined.png" alt="Website Logo">
-                    <div class="logoName">Ronin</div>
+
+        <form action="">
+
+            <div class="container">
+
+                <!-- Contains the left side of the page: Image and logo -->
+                <div class="leftContainer"> <!-- This holds the background image-->
+                    
+                    <div class="leftLogoBar">
+                        <img class="logoImg" src="css/odin-lined.png" alt="Website Logo">
+                        <div class="logoName">Ronin</div>
+                    </div>
+
+                    <div class="photoBy">
+                        Photo by 
+                        <a href="https://unsplash.com/photos/vz2zGzFktBo" target="_blank">Redd F</a>
+                        on
+                        <a href="https://unsplash.com" target="_blank">Unsplash</a>
+                    </div>
+
                 </div>
-                <div class="photoBy">
-                    Photo by 
-                    <a href="https://unsplash.com/photos/vz2zGzFktBo" target="_blank">Redd F</a>
-                    on
-                    <a href="https://unsplash.com" target="_blank">Unsplash</a>
-                </div>
-            </div>
-            <!-- Contains the right side of the page-->
-            <div class="rightContainer">
 
-                <form action="">
+                <!-- Contains the right side of the page-->
+                <div class="rightContainer">
 
-                    <div class="formContainer">
+                    <!-- Top container contains the description for the
+                    form and what the page is about. -->
+                    <div class="topContainer">
 
-                        <!-- Top container contains the description for the
-                            form and what the page is about. -->
-                        <div class="topContainer">
-                            <p class="text1">
-                                This is not a real online servie! You know you need
-                                something like this in your life to help you realize
-                                your deepest dreams. Sign up now to get started
-                            </p>
-                            <p class="text2">
-                                You know you want to
-                            </p>
-                        </div>
+                        <p class="text1">
+                            This is not a real online servie! You know you need
+                            something like this in your life to help you realize
+                            your deepest dreams. Sign up <em>now</em> to get started
+                        </p>
 
-                        <!-- Form is wrapped around middle and bottom container:
-                            middleContainer contains the sign up form while the
-                            bottomContainer contains the submit button for the form-->
-                        <div class="middleContainer">
+                        <p class="text2">
+                            You <em>know</em> you want to
+                        </p>
 
-                            <div class="formTitle">Let's do this!</div>
-                            
-                            <!-- This container hold the full sign up form
-                                but does not include the submit button -->
-                            <div class="signUpContainer">
-                                <div class="leftSideForm">
-                                    <label for="firstName">First Name</label>
+                    </div>
+
+                    <!-- Form is wrapped around middle and bottom container:
+                        middleContainer contains the sign up form while the
+                        bottomContainer contains the submit button for the form-->
+                    <div class="middleContainer">
+
+                        <div class="formTitle">Let's do this!</div>
+                        
+                        <!-- This container hold the full sign up form
+                            but does not include the submit button -->
+                        <div class="signUpContainer">
+
+                            <div class="leftSideForm">
+
+                                <div class="inputBox">
+                                    <label for="firstName">FIRST NAME</label>
                                     <input type="text" id="firstName" name="firstName">
-                                    <label for="email">Email</label>
+                                </div>
+
+                                <div class="inputBox">
+                                    <label for="email">EMAIL</label>
                                     <input type="email" id="email" name="email">
-                                    <label for="password">Password</label>
-                                    <input type="text" id="password" name="password">
                                 </div>
-                                <div class="rightSideForm">
-                                    <label for="lastName">Last name</label>
+                                
+                                <div class="inputBox">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" id="password" name="password">
+                                </div>
+
+                            </div>
+
+                            <div class="rightSideForm">
+
+                                <div class="inputBox">
+                                    <label for="lastName">LAST NAME</label>
                                     <input type="text" id="lastName" name="lastName">
-                                    <label for="phoneNumber">Phone Number</label>
-                                    <input type="tel" id="phoneNumber" name="phoneNumber">
-                                    <label for="confirmPassword">Confirm Password</label>
-                                    <input type="text" id="confirmPassword" name="confirmPassword">
                                 </div>
+
+                                <div class="inputBox">
+                                    <label for="phoneNumber">PHONE NUMBER</label>
+                                    <input type="tel" id="phoneNumber" name="phoneNumber">
+                                </div>
+
+                                <div class="inputBox">
+                                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                                    <input type="password" id="confirmPassword" name="confirmPassword">
+                                </div>
+
                             </div>
 
-                        </div>
-
-                        <!-- Bottom container that holds the form submit button
-                            and log in -->
-                        <div class="bottomContainer">
-
-                            <div class="creatAccountContainer">
-                                <button type="submit">Create Account</button>
-                            </div>
-
-                            <div class="logInContainer">
-                                Already have an account? Log in
-                            </div>
                         </div>
 
                     </div>
 
-                </form>
+                    <!-- Bottom container that holds the form submit button
+                        and log in -->
+                    <div class="bottomContainer">
+
+                        <div class="creatAccountContainer">
+                            <button type="submit">Create Account</button>
+                        </div>
+
+                        <div class="logInContainer">
+                            Already have an account? <a href="">Log in</a> 
+                        </div>
+
+                    </div>
+    
+                </div>
 
             </div>
-        </div>
+
+        </form>
+
     </body>
 
 </html>
